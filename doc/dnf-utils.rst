@@ -16,7 +16,7 @@ Shell Commands
     Report which repository the package was installed from.
     Maps to ``dnf list --installed``.
     See `List Command` in :manpage:`dnf(8)` for details.
-``package-cleanup``
+:manpage:`package-cleanup(1)`
     Clean up locally installed, duplicate, or orphaned packages.
 :manpage:`repo-graph(1)`
     Output a full package dependency graph in dot format.
