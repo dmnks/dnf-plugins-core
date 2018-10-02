@@ -406,6 +406,9 @@ ln -sf %{_libexecdir}/dnf-utils %{buildroot}%{_bindir}/yum-config-manager
 ln -sf %{_libexecdir}/dnf-utils %{buildroot}%{_bindir}/yum-debug-dump
 ln -sf %{_libexecdir}/dnf-utils %{buildroot}%{_bindir}/yum-debug-restore
 ln -sf %{_libexecdir}/dnf-utils %{buildroot}%{_bindir}/yumdownloader
+ln -sf %{_mandir}/man1/dnf-utils.1.gz %{buildroot}%{_mandir}/man1/find-repos-of-install.1.gz
+ln -sf %{_mandir}/man1/dnf-utils.1.gz %{buildroot}%{_mandir}/man1/repoquery.1.gz
+ln -sf %{_mandir}/man1/dnf-utils.1.gz %{buildroot}%{_mandir}/man1/repotrack.1.gz
 ln -sf %{_mandir}/man1/dnf-utils.1.gz %{buildroot}%{_mandir}/man1/yum-utils.1.gz
 %endif
 
@@ -534,6 +537,9 @@ PYTHONPATH=./plugins nosetests-%{python3_version} -s tests/
 %{_bindir}/yum-debug-restore
 %{_bindir}/yumdownloader
 %{_mandir}/man1/package-cleanup.*
+%{_mandir}/man1/find-repos-of-install.*
+%{_mandir}/man1/repoquery.*
+%{_mandir}/man1/repotrack.*
 %{_mandir}/man1/dnf-utils.*
 %{_mandir}/man1/yum-utils.*
 %else
